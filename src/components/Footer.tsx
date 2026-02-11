@@ -104,7 +104,7 @@ const Footer: React.FC = () => {
           <div>
             <h3 className="text-lg font-bold mb-6">{t.footer.about}</h3>
             <p className="text-slate-400 text-sm leading-relaxed">
-              {t.about.description1.substring(0, 150)}...
+              {t.footer.aboutText}
             </p>
           </div>
         </div>

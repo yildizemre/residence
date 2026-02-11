@@ -120,6 +120,7 @@ export interface Translations {
   footer: {
     rights: string;
     about: string;
+    aboutText: string;
     quickLinks: string;
     contact: string;
     address: string;
@@ -262,6 +263,7 @@ export const translations: Record<Language, Translations> = {
     footer: {
       rights: '© 2026 Residence Istanbul. All rights reserved.',
       about: 'About',
+      aboutText: 'Residence Istanbul is always with you and will be in solidarity.',
       quickLinks: 'Quick Links',
       contact: 'Contact Us',
       address: 'Istanbul, Turkey',
@@ -402,6 +404,7 @@ export const translations: Record<Language, Translations> = {
     footer: {
       rights: '© 2026 Residence Istanbul. جميع الحقوق محفوظة.',
       about: 'حول',
+      aboutText: 'Residence Istanbul دائماً معك وسيكون في تضامن.',
       quickLinks: 'روابط سريعة',
       contact: 'اتصل بنا',
       address: 'اسطنبول، تركيا',
@@ -542,6 +545,7 @@ export const translations: Record<Language, Translations> = {
     footer: {
       rights: '© 2026 Residence Istanbul. Все права защищены.',
       about: 'О нас',
+      aboutText: 'Residence Istanbul всегда с вами и будет в солидарности.',
       quickLinks: 'Быстрые ссылки',
       contact: 'Свяжитесь с нами',
       address: 'Стамбул, Турция',
@@ -682,6 +686,7 @@ export const translations: Record<Language, Translations> = {
     footer: {
       rights: '© 2026 Residence Istanbul. تمامی حقوق محفوظ است.',
       about: 'درباره',
+      aboutText: 'Residence Istanbul همیشه با شماست و در همبستگی خواهد بود.',
       quickLinks: 'لینک‌های سریع',
       contact: 'با ما تماس بگیرید',
       address: 'استانبول، ترکیه',
@@ -715,9 +720,9 @@ export const translations: Record<Language, Translations> = {
     about: {
       badge: 'Biz Kimiz',
       title: 'İstanbul\'da Modern Mimari Üretiyoruz',
-      description1: 'İstanbul genelinde modern, lüks konut projeleri konusunda uzmanlaşmış önde gelen bir gayrimenkul geliştirme şirketiyiz. 15 yılı aşkın deneyimimizle, çağdaş tasarımı Türk mirasıyla harmanlayan mimari şaheserler yaratmada sektör lideri olarak kendimizi kanıtladık.',
-      description2: 'Mükemmelliğe olan bağlılığımız, üstlendiğimiz her projeyi yönlendirir. Konseptten tamamlanmaya kadar en yüksek kalite standartlarını koruyoruz, son teknoloji inşaat tekniklerini ve premium malzemeleri kullanıyoruz. Her geliştirme, sakinlere İstanbul\'un en gözde lokasyonlarında benzersiz bir yaşam deneyimi sunacak şekilde özenle tasarlanmıştır.',
-      description3: 'Müşteri odaklı yaklaşımımızla gurur duyuyoruz ve yatırım yolculuğu boyunca kapsamlı destek sağlıyoruz. Uzman mimar, mühendis ve gayrimenkul profesyonellerinden oluşan ekibimiz, yalnızca uluslararası standartları karşılamakla kalmayıp aşan mülkler sunmak için birlikte çalışıyor ve bu da bizi dünya çapında seçici yatırımcıların güvenilir tercihi yapıyor.',
+      description1: 'Residence İstanbul, İstanbul\'da gayrimenkul danışmanlığı yapan, modern ve lüks konut projelerinde uzmanlaşmış bir firmadır. Aradığınız residans, daire ve apartman konusunda size yardımcı olmaktan mutluluk duyuyoruz.',
+      description2: 'Güvene dayalı ticaret anlayışımız ve müşteri memnuniyetine bağlılığımızla, son teknoloji inşaat teknikleri ve premium olanaklar sunarak güvenle ikamet edeceğiniz konutları sizlerle buluşturuyoruz.',
+      description3: 'Yatırım yolculuğunuz boyunca yanınızdayız. Yeni projeler, sıfır daireler ve yaşanabilir apartmanları sizlere sunuyoruz. Beğendiğiniz bölge, semt, havalimanına yakınlık ve istediğiniz özellikler ile fiyat aralığınızı bize bildirmeniz yeterlidir.',
       cta: 'Hikayemizi Keşfedin',
       stats: {
         years: 'Yıllık Mükemmellik',
@@ -727,8 +732,8 @@ export const translations: Record<Language, Translations> = {
       },
     },
     hero: {
-      title: 'İstanbul\'da Lüks Yaşam',
-      subtitle: 'İstanbul\'un kalbinde premium daireler',
+      title: 'İstanbul\'da lüks huzurlu güvenli yaşam',
+      subtitle: 'Burada İstanbul\'da aradığınız residence ve sıfır daireler yeni projeler',
       cta: 'Projeleri Görüntüle',
       badge: '500+ Uluslararası Yatırımcının Güvendiği',
     },
@@ -822,6 +827,7 @@ export const translations: Record<Language, Translations> = {
     footer: {
       rights: '© 2026 Residence Istanbul. Tüm hakları saklıdır.',
       about: 'Hakkımızda',
+      aboutText: 'Residence İstanbul sizin her zaman yanınızda ve dayanışma içinde olacaktır.',
       quickLinks: 'Hızlı Bağlantılar',
       contact: 'İletişim',
       address: 'İstanbul, Türkiye',
@@ -962,6 +968,7 @@ export const translations: Record<Language, Translations> = {
     footer: {
       rights: '© 2026 Residence Istanbul. تمام حقوق محفوظ ہیں۔',
       about: 'بارے میں',
+      aboutText: 'Residence Istanbul ہمیشہ آپ کے ساتھ ہے اور یکجہتی میں رہے گا۔',
       quickLinks: 'فوری لنکس',
       contact: 'ہم سے رابطہ کریں',
       address: 'استنبول، ترکی',
