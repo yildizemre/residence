@@ -4,6 +4,7 @@ import { useLanguage } from '../LanguageContext';
 
 const Footer: React.FC = () => {
   const { t, isRTL } = useLanguage();
+  const contactEmail = 'residenceistanbulturkey@gmail.com';
 
   const scrollToSection = (id: string) => {
     const element = document.getElementById(id);
@@ -92,10 +93,10 @@ const Footer: React.FC = () => {
               <li className="flex items-start space-x-3">
                 <Mail size={18} className="text-amber-500 mt-1 flex-shrink-0" />
                 <a
-                  href={`mailto:${t.footer.email}`}
+                  href={`mailto:${contactEmail}`}
                   className="text-slate-400 hover:text-amber-500 transition-colors duration-300 text-sm"
                 >
-                  {t.footer.email}
+                  {contactEmail}
                 </a>
               </li>
             </ul>

@@ -31,7 +31,7 @@ const WhyInvest: React.FC = () => {
       id="why-invest"
       className="relative py-24 md:py-40 text-white overflow-hidden"
       style={{
-        backgroundImage: 'url(https://images.pexels.com/photos/2064827/pexels-photo-2064827.jpeg?auto=compress&cs=tinysrgb&w=1920)',
+        backgroundImage: 'url(/3.jpeg)',
         backgroundSize: 'cover',
         backgroundPosition: 'center',
         backgroundAttachment: 'fixed',

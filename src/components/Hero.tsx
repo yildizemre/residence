@@ -24,7 +24,7 @@ const Hero: React.FC = () => {
       id="home"
       className="relative h-screen flex items-center justify-center overflow-hidden"
       style={{
-        backgroundImage: 'url(/resim.png)',
+        backgroundImage: 'url(/1.jpeg)',
         backgroundSize: 'cover',
         backgroundPosition: 'center',
         backgroundAttachment: 'fixed',
