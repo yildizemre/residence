@@ -1,5 +1,5 @@
 import React, { useEffect, useState } from 'react';
-import { ChevronDown, Star } from 'lucide-react';
+import { ChevronDown } from 'lucide-react';
 import { useLanguage } from '../LanguageContext';
 
 const Hero: React.FC = () => {
@@ -60,7 +60,7 @@ const Hero: React.FC = () => {
             rel="noopener noreferrer"
             className="px-7 md:px-8 py-3.5 bg-white/10 backdrop-blur-md text-white font-semibold text-base rounded-full border-2 border-white/30 hover:bg-white/20 hover:border-white/50 transition-all duration-500 hover:scale-105"
           >
-            Contact Us
+            {t.hero.secondaryCta}
           </a>
         </div>
       </div>

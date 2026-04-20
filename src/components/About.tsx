@@ -3,7 +3,7 @@ import { Building2, Award, Users, TrendingUp } from 'lucide-react';
 import { useLanguage } from '../LanguageContext';
 
 const About: React.FC = () => {
-  const { t, isRTL, language } = useLanguage();
+  const { t, isRTL } = useLanguage();
 
   const stats = [
     { icon: Building2, value: '15+', label: t.about.stats.years },
@@ -35,11 +35,9 @@ const About: React.FC = () => {
               <p className="text-base md:text-lg">
                 {t.about.description3}
               </p>
-              {language === 'tr' && (
-                <p className="text-base md:text-lg">
-                  Gayrimenkul Danismanligi ucreti, musteri memnuniyeti olmadiginda iade edilir. Oturum, ikametgah, satin alma, kiraya verme gibi islerinizin her asamasinda istediginizde yaninizda olacagiz. Istanbul'da guveneceginiz bir yatirim ortaginiz olmak hedefimizdir.
-                </p>
-              )}
+              <p className="text-base md:text-lg">
+                {t.about.description4}
+              </p>
             </div>
 
             <div className="mt-10">
@@ -59,7 +57,7 @@ const About: React.FC = () => {
               <div className="absolute -inset-4 bg-gradient-to-r from-amber-500/20 to-slate-900/20 rounded-3xl blur-2xl"></div>
               <img
                 src="/2.jpeg"
-                alt="Modern Architecture Istanbul"
+                alt={t.about.imageAlt}
                 className="relative rounded-2xl shadow-2xl w-full h-[500px] object-cover"
               />
             </div>

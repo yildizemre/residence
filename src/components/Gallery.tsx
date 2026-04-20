@@ -62,7 +62,7 @@ const Gallery: React.FC = () => {
             >
               <img
                 src={image}
-                alt={`Gallery ${index + 1}`}
+                alt={`${t.gallery.imageAlt} ${index + 1}`}
                 className="w-full h-full object-cover group-hover:scale-110 transition-transform duration-700"
               />
               <div className="absolute inset-0 bg-black/0 group-hover:bg-black/20 transition-all duration-500"></div>
@@ -109,7 +109,7 @@ const Gallery: React.FC = () => {
           >
             <img
               src={images[selectedImage]}
-              alt={`Gallery ${selectedImage + 1}`}
+              alt={`${t.gallery.imageAlt} ${selectedImage + 1}`}
               className="max-w-full max-h-[90vh] object-contain rounded-2xl shadow-2xl"
             />
           </div>

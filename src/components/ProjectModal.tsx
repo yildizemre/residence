@@ -76,6 +76,30 @@ const ProjectModal: React.FC<ProjectModalProps> = ({ project, isOpen, onClose })
     }
   };
 
+  const getProjectPrice = () => {
+    switch (language) {
+      case 'ar':
+        return project.priceAr;
+      case 'ru':
+        return project.priceRu;
+      case 'fa':
+        return project.priceFa;
+      case 'tr':
+        return project.priceTr;
+      case 'ur':
+        return project.priceUr;
+      default:
+        return project.priceEn;
+    }
+  };
+
+  const getPropertyTypeLabel = () => {
+    if (project.type === 'Apartment') {
+      return t.projectModal.propertyTypeApartment;
+    }
+    return project.type;
+  };
+
   const images = project.images || [project.image];
 
   const nextImage = () => {
@@ -148,7 +172,7 @@ const ProjectModal: React.FC<ProjectModalProps> = ({ project, isOpen, onClose })
               </div>
               <div className="text-right">
                 <div className="text-xs text-slate-500 mb-1">{t.projectModal.startingFrom}</div>
-                <div className="text-2xl md:text-3xl font-bold text-amber-500">{project.priceEn}</div>
+                <div className="text-2xl md:text-3xl font-bold text-amber-500">{getProjectPrice()}</div>
               </div>
             </div>
 
@@ -200,7 +224,7 @@ const ProjectModal: React.FC<ProjectModalProps> = ({ project, isOpen, onClose })
                   </div>
                   <div>
                     <div className="text-xs text-slate-500">{t.projectModal.type}</div>
-                    <div className="text-base font-bold text-slate-900">{project.type}</div>
+                    <div className="text-base font-bold text-slate-900">{getPropertyTypeLabel()}</div>
                   </div>
                 </div>
               )}

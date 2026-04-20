@@ -16,6 +16,8 @@ export interface Translations {
     description1: string;
     description2: string;
     description3: string;
+    description4: string;
+    imageAlt: string;
     cta: string;
     stats: {
       years: string;
@@ -28,6 +30,7 @@ export interface Translations {
     title: string;
     subtitle: string;
     cta: string;
+    secondaryCta: string;
     badge: string;
   };
   stats: {
@@ -110,6 +113,12 @@ export interface Translations {
     phone: string;
     message: string;
     submit: string;
+    whatsappLabels: {
+      name: string;
+      email: string;
+      phone: string;
+      message: string;
+    };
     info: {
       title: string;
       address: string;
@@ -119,6 +128,7 @@ export interface Translations {
   };
   footer: {
     rights: string;
+    intro: string;
     about: string;
     aboutText: string;
     quickLinks: string;
@@ -127,6 +137,9 @@ export interface Translations {
     phone: string;
     email: string;
     followUs: string;
+    privacyPolicy: string;
+    termsOfService: string;
+    whatsappAria: string;
   };
   projectModal: {
     startingFrom: string;
@@ -134,11 +147,13 @@ export interface Translations {
     bathrooms: string;
     area: string;
     type: string;
+    propertyTypeApartment: string;
     contactUs: string;
   };
   gallery: {
     title: string;
     subtitle: string;
+    imageAlt: string;
   };
 }
 
@@ -159,6 +174,9 @@ export const translations: Record<Language, Translations> = {
       description1: 'We are a premier real estate development company specializing in modern, luxury residential projects across Istanbul. With over 15 years of experience, we have established ourselves as industry leaders in creating architectural masterpieces that blend contemporary design with Turkish heritage.',
       description2: 'Our commitment to excellence drives every project we undertake. From concept to completion, we maintain the highest standards of quality, utilizing cutting-edge construction techniques and premium materials. Each development is carefully designed to offer residents an unparalleled living experience in Istanbul\'s most desirable locations.',
       description3: 'We pride ourselves on our client-centric approach, providing comprehensive support throughout the investment journey. Our team of expert architects, engineers, and real estate professionals work together to deliver properties that not only meet but exceed international standards, making us the trusted choice for discerning investors worldwide.',
+      description4:
+        'Real estate consultancy fees are refunded if you are not satisfied. We are with you whenever you need us at every stage—residence, domicile, purchase, and rental. Our goal is to be an investment partner you can rely on in Istanbul.',
+      imageAlt: 'Modern architecture in Istanbul',
       cta: 'Discover Our Story',
       stats: {
         years: 'Years of Excellence',
@@ -171,6 +189,7 @@ export const translations: Record<Language, Translations> = {
       title: 'Istanbul Living Elevated',
       subtitle: 'Premium apartments in the heart of Istanbul',
       cta: 'View Properties',
+      secondaryCta: 'Contact Us',
       badge: 'Trusted by 500+ International Investors',
     },
     stats: {
@@ -253,6 +272,12 @@ export const translations: Record<Language, Translations> = {
       phone: 'Phone Number',
       message: 'Tell us about your investment goals',
       submit: 'Schedule Free Consultation',
+      whatsappLabels: {
+        name: 'Name',
+        email: 'Email',
+        phone: 'Phone',
+        message: 'Message',
+      },
       info: {
         title: 'Get in Touch',
         address: 'Istanbul, Turkey',
@@ -262,6 +287,7 @@ export const translations: Record<Language, Translations> = {
     },
     footer: {
       rights: '© 2026 Residence Istanbul. All rights reserved.',
+      intro: 'Trusted real estate consultancy for luxury residences and new projects in Istanbul.',
       about: 'About',
       aboutText: 'Residence Istanbul is always with you and will be in solidarity.',
       quickLinks: 'Quick Links',
@@ -270,6 +296,9 @@ export const translations: Record<Language, Translations> = {
       phone: '+90 506 969 1161',
       email: 'info@residenceistanbul.com',
       followUs: 'Follow Us',
+      privacyPolicy: 'Privacy Policy',
+      termsOfService: 'Terms of Service',
+      whatsappAria: 'Contact us on WhatsApp',
     },
     projectModal: {
       startingFrom: 'Starting from',
@@ -277,11 +306,13 @@ export const translations: Record<Language, Translations> = {
       bathrooms: 'Bathrooms',
       area: 'Area',
       type: 'Type',
+      propertyTypeApartment: 'Apartment',
       contactUs: 'Contact Us via WhatsApp',
     },
     gallery: {
       title: 'Premium Investment Opportunities',
       subtitle: 'Explore our stunning properties and developments',
+      imageAlt: 'Gallery image',
     },
   },
   ar: {
@@ -300,6 +331,9 @@ export const translations: Record<Language, Translations> = {
       description1: 'نحن شركة رائدة في مجال تطوير العقارات متخصصة في المشاريع السكنية الحديثة والفاخرة في جميع أنحاء اسطنبول. مع أكثر من 15 عامًا من الخبرة، رسخنا أنفسنا كقادة في الصناعة في إنشاء تحف معمارية تمزج التصميم المعاصر مع التراث التركي.',
       description2: 'التزامنا بالتميز يدفع كل مشروع نقوم به. من المفهوم إلى الإنجاز، نحافظ على أعلى معايير الجودة، باستخدام أحدث تقنيات البناء والمواد الممتازة. تم تصميم كل مشروع بعناية لتوفير تجربة معيشية لا مثيل لها للسكان في أكثر المواقع المرغوبة في اسطنبول.',
       description3: 'نفخر بنهجنا الذي يركز على العميل، حيث نوفر الدعم الشامل طوال رحلة الاستثمار. يعمل فريقنا من المهندسين المعماريين والمهندسين وخبراء العقارات معًا لتقديم عقارات لا تلبي المعايير الدولية فحسب، بل تتجاوزها، مما يجعلنا الخيار الموثوق للمستثمرين المميزين في جميع أنحاء العالم.',
+      description4:
+        'تُسترد أتعاب الاستشارات العقارية إذا لم يكن هناك رضا. نكون إلى جانبك عندما تحتاجنا في كل مرحلة—الإقامة والسكن وشراء أو كراء العقار. هدفنا أن نكون شريك استثمار تثق به في إسطنبول.',
+      imageAlt: 'عمارة حديثة في إسطنبول',
       cta: 'اكتشف قصتنا',
       stats: {
         years: 'سنوات من التميز',
@@ -312,6 +346,7 @@ export const translations: Record<Language, Translations> = {
       title: 'الحياة الراقية في اسطنبول',
       subtitle: 'شقق فاخرة في قلب اسطنبول',
       cta: 'عرض العقارات',
+      secondaryCta: 'اتصل بنا',
       badge: 'موثوق من قبل أكثر من 500 مستثمر دولي',
     },
     stats: {
@@ -394,6 +429,12 @@ export const translations: Record<Language, Translations> = {
       phone: 'رقم الهاتف',
       message: 'أخبرنا عن أهدافك الاستثمارية',
       submit: 'حدد استشارة مجانية',
+      whatsappLabels: {
+        name: 'الاسم',
+        email: 'البريد',
+        phone: 'الهاتف',
+        message: 'الرسالة',
+      },
       info: {
         title: 'تواصل معنا',
         address: 'اسطنبول، تركيا',
@@ -403,6 +444,7 @@ export const translations: Record<Language, Translations> = {
     },
     footer: {
       rights: '© 2026 Residence Istanbul. جميع الحقوق محفوظة.',
+      intro: 'استشارات عقارية موثوقة للمساكن الفاخرة والمشاريع الجديدة في إسطنبول.',
       about: 'حول',
       aboutText: 'Residence Istanbul دائماً معك وسيكون في تضامن.',
       quickLinks: 'روابط سريعة',
@@ -411,6 +453,9 @@ export const translations: Record<Language, Translations> = {
       phone: '+90 506 969 1161',
       email: 'info@residenceistanbul.com',
       followUs: 'تابعنا',
+      privacyPolicy: 'سياسة الخصوصية',
+      termsOfService: 'شروط الاستخدام',
+      whatsappAria: 'تواصل معنا عبر واتساب',
     },
     projectModal: {
       startingFrom: 'يبدأ من',
@@ -418,11 +463,13 @@ export const translations: Record<Language, Translations> = {
       bathrooms: 'الحمامات',
       area: 'المساحة',
       type: 'النوع',
+      propertyTypeApartment: 'شقة',
       contactUs: 'تواصل معنا عبر الواتساب',
     },
     gallery: {
-      title: 'فرص استثمارية متميزة',
-      subtitle: 'استكشف عقاراتنا ومشاريعنا المذهلة',
+      title: 'معرض الصور والمشاريع',
+      subtitle: 'اطلع على صور عقاراتنا ومشاريعنا',
+      imageAlt: 'صورة المعرض',
     },
   },
   ru: {
@@ -441,6 +488,9 @@ export const translations: Record<Language, Translations> = {
       description1: 'Мы - ведущая компания по развитию недвижимости, специализирующаяся на современных роскошных жилых проектах по всему Стамбулу. Имея более 15 лет опыта, мы зарекомендовали себя как лидеры отрасли в создании архитектурных шедевров, сочетающих современный дизайн с турецким наследием.',
       description2: 'Наша приверженность совершенству движет каждым проектом, который мы осуществляем. От концепции до завершения мы поддерживаем самые высокие стандарты качества, используя передовые строительные технологии и премиальные материалы. Каждый проект тщательно спроектирован, чтобы предложить жителям непревзойденный опыт жизни в самых желанных местах Стамбула.',
       description3: 'Мы гордимся нашим клиентоориентированным подходом, обеспечивая всестороннюю поддержку на протяжении всего инвестиционного пути. Наша команда опытных архитекторов, инженеров и профессионалов в сфере недвижимости работает вместе, чтобы предоставить объекты, которые не только соответствуют, но и превосходят международные стандарты, что делает нас надежным выбором для взыскательных инвесторов по всему миру.',
+      description4:
+        'Комиссия за консультации по недвижимости возвращается, если вы не удовлетворены. Мы рядом на каждом этапе—вид на жительство, прописка, покупка и аренда. Наша цель — быть надёжным инвестиционным партнёром в Стамбуле.',
+      imageAlt: 'Современная архитектура в Стамбуле',
       cta: 'Узнайте нашу историю',
       stats: {
         years: 'Лет совершенства',
@@ -453,6 +503,7 @@ export const translations: Record<Language, Translations> = {
       title: 'Жизнь в Стамбуле на высшем уровне',
       subtitle: 'Премиальные квартиры в сердце Стамбула',
       cta: 'Посмотреть недвижимость',
+      secondaryCta: 'Связаться с нами',
       badge: 'Нам доверяют более 500 международных инвесторов',
     },
     stats: {
@@ -535,6 +586,12 @@ export const translations: Record<Language, Translations> = {
       phone: 'Номер телефона',
       message: 'Расскажите о ваших инвестиционных целях',
       submit: 'Записаться на консультацию',
+      whatsappLabels: {
+        name: 'Имя',
+        email: 'Email',
+        phone: 'Телефон',
+        message: 'Сообщение',
+      },
       info: {
         title: 'Связаться с нами',
         address: 'Стамбул, Турция',
@@ -544,6 +601,7 @@ export const translations: Record<Language, Translations> = {
     },
     footer: {
       rights: '© 2026 Residence Istanbul. Все права защищены.',
+      intro: 'Надёжные консультации по элитной недвижимости и новым проектам в Стамбуле.',
       about: 'О нас',
       aboutText: 'Residence Istanbul всегда с вами и будет в солидарности.',
       quickLinks: 'Быстрые ссылки',
@@ -552,6 +610,9 @@ export const translations: Record<Language, Translations> = {
       phone: '+90 506 969 1161',
       email: 'info@residenceistanbul.com',
       followUs: 'Следите за нами',
+      privacyPolicy: 'Политика конфиденциальности',
+      termsOfService: 'Условия использования',
+      whatsappAria: 'Связаться с нами в WhatsApp',
     },
     projectModal: {
       startingFrom: 'Начиная от',
@@ -559,11 +620,13 @@ export const translations: Record<Language, Translations> = {
       bathrooms: 'Ванные',
       area: 'Площадь',
       type: 'Тип',
+      propertyTypeApartment: 'Квартира',
       contactUs: 'Свяжитесь с нами через WhatsApp',
     },
     gallery: {
       title: 'Премиальные инвестиционные возможности',
       subtitle: 'Изучите наши потрясающие объекты и проекты',
+      imageAlt: 'Изображение галереи',
     },
   },
   fa: {
@@ -582,6 +645,9 @@ export const translations: Record<Language, Translations> = {
       description1: 'ما یک شرکت پیشرو در توسعه املاک هستیم که در پروژه‌های مسکونی مدرن و لوکس در سراسر استانبول تخصص داریم. با بیش از 15 سال تجربه، ما خود را به عنوان رهبران صنعت در ایجاد شاهکارهای معماری که طراحی معاصر را با میراث ترکیه ترکیب می‌کنند، معرفی کرده‌ایم.',
       description2: 'تعهد ما به تعالی هر پروژه‌ای را که انجام می‌دهیم هدایت می‌کند. از مفهوم تا تکمیل، ما بالاترین استانداردهای کیفیت را حفظ می‌کنیم، با استفاده از تکنیک‌های ساخت پیشرفته و مواد ممتاز. هر پروژه با دقت طراحی شده است تا تجربه زندگی بی‌نظیری را برای ساکنان در مطلوب‌ترین مکان‌های استانبول ارائه دهد.',
       description3: 'ما به رویکرد مشتری‌محور خود افتخار می‌کنیم و در طول سفر سرمایه‌گذاری پشتیبانی جامعی ارائه می‌دهیم. تیم ما از معماران، مهندسان و متخصصان املاک خبره با هم کار می‌کنند تا املاکی را ارائه دهند که نه تنها استانداردهای بین‌المللی را برآورده می‌کنند، بلکه فراتر از آن می‌روند، که ما را به انتخاب مورد اعتماد سرمایه‌گذاران باهوش در سراسر جهان تبدیل می‌کند.',
+      description4:
+        'در صورت عدم رضایت، هزینه مشاوره املاک بازگردانده می‌شود. در هر مرحله—اقامت، اقامتگاه، خرید و اجاره—هر وقت نیاز داشته باشید در کنار شما هستیم. هدف ما همراه سرمایه‌گذاری است که بتوانید در استانبول به آن اعتماد کنید.',
+      imageAlt: 'معماری مدرن در استانبول',
       cta: 'داستان ما را کشف کنید',
       stats: {
         years: 'سال تعالی',
@@ -594,6 +660,7 @@ export const translations: Record<Language, Translations> = {
       title: 'زندگی در سطح بالا در استانبول',
       subtitle: 'آپارتمان‌های لوکس در قلب استانبول',
       cta: 'مشاهده املاک',
+      secondaryCta: 'تماس با ما',
       badge: 'مورد اعتماد بیش از 500 سرمایه‌گذار بین‌المللی',
     },
     stats: {
@@ -676,6 +743,12 @@ export const translations: Record<Language, Translations> = {
       phone: 'شماره تلفن',
       message: 'درباره اهداف سرمایه‌گذاری خود به ما بگویید',
       submit: 'مشاوره رایگان رزرو کنید',
+      whatsappLabels: {
+        name: 'نام',
+        email: 'ایمیل',
+        phone: 'تلفن',
+        message: 'پیام',
+      },
       info: {
         title: 'تماس با ما',
         address: 'استانبول، ترکیه',
@@ -685,6 +758,7 @@ export const translations: Record<Language, Translations> = {
     },
     footer: {
       rights: '© 2026 Residence Istanbul. تمامی حقوق محفوظ است.',
+      intro: 'مشاوره املاک معتبر برای اقامتگاه‌های لوکس و پروژه‌های جدید در استانبول.',
       about: 'درباره',
       aboutText: 'Residence Istanbul همیشه با شماست و در همبستگی خواهد بود.',
       quickLinks: 'لینک‌های سریع',
@@ -693,6 +767,9 @@ export const translations: Record<Language, Translations> = {
       phone: '+90 506 969 1161',
       email: 'info@residenceistanbul.com',
       followUs: 'ما را دنبال کنید',
+      privacyPolicy: 'حریم خصوصی',
+      termsOfService: 'شرایط استفاده',
+      whatsappAria: 'تماس با ما از طریق واتساپ',
     },
     projectModal: {
       startingFrom: 'شروع از',
@@ -700,11 +777,13 @@ export const translations: Record<Language, Translations> = {
       bathrooms: 'حمام‌ها',
       area: 'مساحت',
       type: 'نوع',
+      propertyTypeApartment: 'آپارتمان',
       contactUs: 'از طریق واتساپ با ما تماس بگیرید',
     },
     gallery: {
-      title: 'فرصت‌های سرمایه‌گذاری ممتاز',
-      subtitle: 'املاک و پروژه‌های خیره‌کننده ما را کاوش کنید',
+      title: 'گالری تصاویر و پروژه‌ها',
+      subtitle: 'نماهایی از املاک و پروژه‌های ما را ببینید',
+      imageAlt: 'تصویر گالری',
     },
   },
   tr: {
@@ -723,6 +802,9 @@ export const translations: Record<Language, Translations> = {
       description1: 'Residence İstanbul, İstanbul\'da gayrimenkul danışmanlığı yapan, modern ve lüks konut projelerinde uzmanlaşmış bir firmadır. Aradığınız residans, daire ve apartman konusunda size yardımcı olmaktan mutluluk duyuyoruz.',
       description2: 'Güvene dayalı ticaret anlayışımız ve müşteri memnuniyetine bağlılığımızla, son teknoloji inşaat teknikleri ve premium olanaklar sunarak güvenle ikamet edeceğiniz konutları sizlerle buluşturuyoruz.',
       description3: 'Yatırım yolculuğunuz boyunca yanınızdayız. Yeni projeler, sıfır daireler ve yaşanabilir apartmanları sizlere sunuyoruz. Beğendiğiniz bölge, semt, havalimanına yakınlık ve istediğiniz özellikler ile fiyat aralığınızı bize bildirmeniz yeterlidir.',
+      description4:
+        'Gayrimenkul danışmanlığı ücreti, müşteri memnuniyeti olmadığında iade edilir. Oturum, ikametgah, satın alma, kiraya verme gibi işlerinizin her aşamasında istediğinizde yanınızda olacağız. İstanbul’da güveneceğiniz bir yatırım ortağınız olmak hedefimizdir.',
+      imageAlt: 'İstanbul’da modern mimari',
       cta: 'Hikayemizi Keşfedin',
       stats: {
         years: 'Yıllık Mükemmellik',
@@ -735,6 +817,7 @@ export const translations: Record<Language, Translations> = {
       title: 'İstanbul\'da lüks huzurlu güvenli yaşam',
       subtitle: 'Burada İstanbul\'da aradığınız residence ve sıfır daireler yeni projeler',
       cta: 'Projeleri Görüntüle',
+      secondaryCta: 'İletişime Geçin',
       badge: '500+ Uluslararası Yatırımcının Güvendiği',
     },
     stats: {
@@ -817,6 +900,12 @@ export const translations: Record<Language, Translations> = {
       phone: 'Telefon Numarası',
       message: 'Yatırım hedefleriniz hakkında bize bilgi verin',
       submit: 'Ücretsiz Görüşme Planla',
+      whatsappLabels: {
+        name: 'Ad',
+        email: 'E-posta',
+        phone: 'Telefon',
+        message: 'Mesaj',
+      },
       info: {
         title: 'İletişime Geçin',
         address: 'İstanbul, Türkiye',
@@ -826,6 +915,7 @@ export const translations: Record<Language, Translations> = {
     },
     footer: {
       rights: '© 2026 Residence Istanbul. Tüm hakları saklıdır.',
+      intro: 'İstanbul’da lüks konut ve yeni projeler için güvenilir gayrimenkul danışmanlığı.',
       about: 'Hakkımızda',
       aboutText: 'Residence İstanbul sizin her zaman yanınızda ve dayanışma içinde olacaktır.',
       quickLinks: 'Hızlı Bağlantılar',
@@ -834,6 +924,9 @@ export const translations: Record<Language, Translations> = {
       phone: '+90 506 969 1161',
       email: 'info@residenceistanbul.com',
       followUs: 'Bizi Takip Edin',
+      privacyPolicy: 'Gizlilik Politikası',
+      termsOfService: 'Kullanım Şartları',
+      whatsappAria: 'WhatsApp üzerinden bize ulaşın',
     },
     projectModal: {
       startingFrom: 'Başlangıç fiyatı',
@@ -841,11 +934,13 @@ export const translations: Record<Language, Translations> = {
       bathrooms: 'Banyo',
       area: 'Alan',
       type: 'Tip',
+      propertyTypeApartment: 'Daire',
       contactUs: 'WhatsApp ile İletişime Geçin',
     },
     gallery: {
       title: 'Premium Yatırım Fırsatları',
       subtitle: 'Muhteşem mülklerimizi ve projelerimizi keşfedin',
+      imageAlt: 'Galeri görseli',
     },
   },
   ur: {
@@ -864,6 +959,9 @@ export const translations: Record<Language, Translations> = {
       description1: 'ہم ایک معروف رئیل اسٹیٹ ڈویلپمنٹ کمپنی ہیں جو پورے استنبول میں جدید، لگژری رہائشی منصوبوں میں مہارت رکھتی ہے۔ 15 سال سے زیادہ کے تجربے کے ساتھ، ہم نے معاصر ڈیزائن کو ترکی ورثے کے ساتھ ملا کر تعمیراتی شاہکار تخلیق کرنے میں صنعت کے رہنما کے طور پر اپنے آپ کو قائم کیا ہے۔',
       description2: 'بہترین کے لیے ہماری وابستگی ہر پروجیکٹ کو آگے بڑھاتی ہے جس کا ہم آغاز کرتے ہیں۔ تصور سے تکمیل تک، ہم جدید ترین تعمیراتی تکنیک اور اعلیٰ معیار کے مواد استعمال کرتے ہوئے معیار کے اعلیٰ ترین معیارات کو برقرار رکھتے ہیں۔ ہر ترقیاتی منصوبہ احتیاط سے ڈیزائن کیا گیا ہے تاکہ رہائشیوں کو استنبول کے انتہائی مطلوبہ مقامات پر بے مثال رہائشی تجربہ فراہم کیا جا سکے۔',
       description3: 'ہمیں اپنے کلائنٹ پر مبنی نقطہ نظر پر فخر ہے، جو سرمایہ کاری کے سفر کے دوران جامع معاونت فراہم کرتا ہے۔ ماہر معماروں، انجینئرز اور رئیل اسٹیٹ پیشہ وروں کی ہماری ٹیم مل کر ایسی جائیدادیں فراہم کرنے کے لیے کام کرتی ہے جو نہ صرف بین الاقوامی معیارات کو پورا کرتی ہیں بلکہ ان سے آگے نکل جاتی ہیں، جو ہمیں دنیا بھر کے باشعور سرمایہ کاروں کے لیے قابل اعتماد انتخاب بناتی ہے۔',
+      description4:
+        'رئیل اسٹیٹ مشاورت کی فیس واپس کر دی جاتی ہے اگر آپ مطمئن نہیں۔ ہم رہائش، مستقل سکونت، خرید اور کرایے کے ہر مرحلے پر آپ کی ضرورت پر ساتھ ہیں۔ ہمارا مقصد استنبول میں ایسا سرمایہ کاری پارٹنر ہونا جس پر آپ بھروسہ کر سکیں۔',
+      imageAlt: 'استنبول میں جدید فن تعمیر',
       cta: 'ہماری کہانی دریافت کریں',
       stats: {
         years: 'سال کی بہترین کارکردگی',
@@ -876,6 +974,7 @@ export const translations: Record<Language, Translations> = {
       title: 'استنبول میں بلند معیار کی زندگی',
       subtitle: 'استنبول کے دل میں پریمیم اپارٹمنٹس',
       cta: 'جائیدادیں دیکھیں',
+      secondaryCta: 'رابطہ کریں',
       badge: '500+ بین الاقوامی سرمایہ کاروں کا اعتماد',
     },
     stats: {
@@ -958,6 +1057,12 @@ export const translations: Record<Language, Translations> = {
       phone: 'فون نمبر',
       message: 'ہمیں اپنے سرمایہ کاری کے اہداف کے بارے میں بتائیں',
       submit: 'مفت مشاورت شیڈول کریں',
+      whatsappLabels: {
+        name: 'نام',
+        email: 'ای میل',
+        phone: 'فون',
+        message: 'پیغام',
+      },
       info: {
         title: 'رابطہ کریں',
         address: 'استنبول، ترکی',
@@ -967,6 +1072,7 @@ export const translations: Record<Language, Translations> = {
     },
     footer: {
       rights: '© 2026 Residence Istanbul. تمام حقوق محفوظ ہیں۔',
+      intro: 'استنبول میں لگژری رہائش اور نئے منصوبوں کے لیے قابل اعتماد رئیل اسٹیٹ مشاورت۔',
       about: 'بارے میں',
       aboutText: 'Residence Istanbul ہمیشہ آپ کے ساتھ ہے اور یکجہتی میں رہے گا۔',
       quickLinks: 'فوری لنکس',
@@ -975,6 +1081,9 @@ export const translations: Record<Language, Translations> = {
       phone: '+90 506 969 1161',
       email: 'info@residenceistanbul.com',
       followUs: 'ہمیں فالو کریں',
+      privacyPolicy: 'رازداری کی پالیسی',
+      termsOfService: 'استعمال کی شرائط',
+      whatsappAria: 'واٹس ایپ پر ہم سے رابطہ کریں',
     },
     projectModal: {
       startingFrom: 'سے شروع',
@@ -982,11 +1091,13 @@ export const translations: Record<Language, Translations> = {
       bathrooms: 'باتھ رومز',
       area: 'رقبہ',
       type: 'قسم',
+      propertyTypeApartment: 'اپارٹمنٹ',
       contactUs: 'واٹس ایپ کے ذریعے ہم سے رابطہ کریں',
     },
     gallery: {
       title: 'پریمیم سرمایہ کاری کے مواقع',
       subtitle: 'ہماری شاندار جائیدادیں اور ترقیات دریافت کریں',
+      imageAlt: 'گیلری تصویر',
     },
   },
 };
@@ -1023,6 +1134,7 @@ export const projectsData = [
     priceAr: '$850,000',
     priceRu: '$850,000',
     priceFa: '$850,000',
+    priceTr: '$850,000',
     priceUr: '$850,000',
     bedrooms: '3+1',
     bathrooms: '2',
@@ -1060,6 +1172,7 @@ export const projectsData = [
     priceAr: '$650,000',
     priceRu: '$650,000',
     priceFa: '$650,000',
+    priceTr: '$650,000',
     priceUr: '$650,000',
     bedrooms: '2+1',
     bathrooms: '2',
@@ -1097,6 +1210,7 @@ export const projectsData = [
     priceAr: '$750,000',
     priceRu: '$750,000',
     priceFa: '$750,000',
+    priceTr: '$750,000',
     priceUr: '$750,000',
     bedrooms: '3+1',
     bathrooms: '3',

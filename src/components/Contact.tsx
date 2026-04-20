@@ -13,7 +13,8 @@ const Contact: React.FC = () => {
 
   const handleSubmit = (e: React.FormEvent) => {
     e.preventDefault();
-    const whatsappMessage = `Name: ${formData.name}%0AEmail: ${formData.email}%0APhone: ${formData.phone}%0AMessage: ${formData.message}`;
+    const w = t.contact.whatsappLabels;
+    const whatsappMessage = `${w.name}: ${formData.name}%0A${w.email}: ${formData.email}%0A${w.phone}: ${formData.phone}%0A${w.message}: ${formData.message}`;
     window.open(`https://wa.me/905069691161?text=${whatsappMessage}`, '_blank');
   };
 

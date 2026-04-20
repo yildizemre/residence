@@ -3,7 +3,7 @@ import { MapPin, Phone, Mail, Instagram, Facebook, Linkedin } from 'lucide-react
 import { useLanguage } from '../LanguageContext';
 
 const Footer: React.FC = () => {
-  const { t, isRTL } = useLanguage();
+  const { t } = useLanguage();
   const contactEmail = 'residenceistanbulturkey@gmail.com';
 
   const scrollToSection = (id: string) => {
@@ -40,7 +40,7 @@ const Footer: React.FC = () => {
               />
             </div>
             <p className="text-slate-400 text-sm leading-relaxed mb-6">
-              {t.about.badge}
+              {t.footer.intro}
             </p>
             <div className="flex space-x-4">
               {socialLinks.map((social, index) => (
@@ -118,13 +118,13 @@ const Footer: React.FC = () => {
                 href="#"
                 className="text-slate-500 hover:text-amber-500 transition-colors duration-300 text-sm"
               >
-                Privacy Policy
+                {t.footer.privacyPolicy}
               </a>
               <a
                 href="#"
                 className="text-slate-500 hover:text-amber-500 transition-colors duration-300 text-sm"
               >
-                Terms of Service
+                {t.footer.termsOfService}
               </a>
             </div>
           </div>
