@@ -24,7 +24,7 @@ const Hero: React.FC = () => {
       id="home"
       className="relative h-screen flex items-center justify-center overflow-hidden"
       style={{
-        backgroundImage: 'url(/1.jpeg)',
+        backgroundImage: 'url(/nw2-5.jpeg)',
         backgroundSize: 'cover',
         backgroundPosition: 'center',
         backgroundAttachment: 'fixed',
@@ -42,8 +42,12 @@ const Hero: React.FC = () => {
           {t.hero.title}
         </h1>
 
-        <p className="text-base md:text-lg text-white/90 mb-10 max-w-3xl mx-auto font-light animate-slide-up animation-delay-200">
+        <p className="text-base md:text-lg text-white/90 mb-4 max-w-3xl mx-auto font-light animate-slide-up animation-delay-200">
           {t.hero.subtitle}
+        </p>
+
+        <p className="text-sm md:text-base text-white/75 mb-10 max-w-3xl mx-auto font-light animate-slide-up animation-delay-300">
+          {t.hero.tagline}
         </p>
 
         <div className="flex flex-col sm:flex-row items-center justify-center gap-4 animate-slide-up animation-delay-400">
@@ -101,6 +105,10 @@ const Hero: React.FC = () => {
 
         .animation-delay-200 {
           animation-delay: 200ms;
+        }
+
+        .animation-delay-300 {
+          animation-delay: 300ms;
         }
 
         .animation-delay-400 {

@@ -7,6 +7,10 @@ const Gallery: React.FC = () => {
   const [selectedImage, setSelectedImage] = useState<number | null>(null);
 
   const images = [
+    '/nw2-2.jpeg',
+    '/nw2-3.jpeg',
+    '/nw2-4.jpeg',
+    '/nw2-5.jpeg',
     '/aa.jpeg',
     '/aa2.jpeg',
     '/aa3.jpeg',

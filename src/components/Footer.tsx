@@ -34,7 +34,7 @@ const Footer: React.FC = () => {
           <div>
             <div className="flex items-center space-x-3 mb-6">
               <img
-                src="/residence-removebg-preview.png"
+                src="/nw2-1.jpeg"
                 alt="Residence Istanbul"
                 className="h-12 w-auto object-contain"
               />

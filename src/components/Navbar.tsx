@@ -32,9 +32,9 @@ const Navbar: React.FC = () => {
           <div className="flex items-center">
             <div className="flex items-center space-x-3">
               <img
-                src="/residence-removebg-preview.png"
+                src="/nw2-1.jpeg"
                 alt="Residence Istanbul"
-                className="h-12 sm:h-14 w-auto object-contain"
+                className="h-14 sm:h-16 w-auto object-contain"
               />
             </div>
           </div>

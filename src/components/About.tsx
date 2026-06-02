@@ -56,7 +56,7 @@ const About: React.FC = () => {
             <div className="relative">
               <div className="absolute -inset-4 bg-gradient-to-r from-amber-500/20 to-slate-900/20 rounded-3xl blur-2xl"></div>
               <img
-                src="/2.jpeg"
+                src="/nw2-3.jpeg"
                 alt={t.about.imageAlt}
                 className="relative rounded-2xl shadow-2xl w-full h-[500px] object-cover"
               />

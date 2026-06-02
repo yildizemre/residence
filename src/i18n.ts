@@ -1,5 +1,7 @@
 export type Language = 'en' | 'ar' | 'ru' | 'fa' | 'tr' | 'ur';
 
+import { OverviewTranslations, overviewTranslations } from './i18n/overview';
+
 export interface Translations {
   nav: {
     home: string;
@@ -29,6 +31,7 @@ export interface Translations {
   hero: {
     title: string;
     subtitle: string;
+    tagline: string;
     cta: string;
     secondaryCta: string;
     badge: string;
@@ -155,6 +158,7 @@ export interface Translations {
     subtitle: string;
     imageAlt: string;
   };
+  overview: OverviewTranslations;
 }
 
 export const translations: Record<Language, Translations> = {
@@ -169,15 +173,18 @@ export const translations: Record<Language, Translations> = {
       gallery: 'Gallery',
     },
     about: {
-      badge: 'Who We Are',
-      title: 'Crafting Modern Architecture in Istanbul',
-      description1: 'We are a premier real estate development company specializing in modern, luxury residential projects across Istanbul. With over 15 years of experience, we have established ourselves as industry leaders in creating architectural masterpieces that blend contemporary design with Turkish heritage.',
-      description2: 'Our commitment to excellence drives every project we undertake. From concept to completion, we maintain the highest standards of quality, utilizing cutting-edge construction techniques and premium materials. Each development is carefully designed to offer residents an unparalleled living experience in Istanbul\'s most desirable locations.',
-      description3: 'We pride ourselves on our client-centric approach, providing comprehensive support throughout the investment journey. Our team of expert architects, engineers, and real estate professionals work together to deliver properties that not only meet but exceed international standards, making us the trusted choice for discerning investors worldwide.',
+      badge: 'Residence Istanbul',
+      title: 'Istanbul\'s Premier Real Estate Investment Consultancy',
+      description1:
+        'Welcome to Residence Istanbul — a premium real estate investment company specializing in luxury apartments, high-yield investment properties, modern residences, and exclusive real estate opportunities across Istanbul\'s most desirable districts.',
+      description2:
+        'We do not simply sell properties. We strategically guide Middle Eastern, Gulf, international investors, and global homebuyers toward carefully selected real estate opportunities that combine capital growth, lifestyle excellence, Turkish citizenship potential, and long-term investment security.',
+      description3:
+        'Whether you are searching for a luxury residence, a profitable real estate investment, Turkish citizenship through property investment, move-in-ready apartments, brand-new residential developments, or commercial or residential buildings — Residence Istanbul delivers expert, personalized, and trust-driven solutions designed around your goals.',
       description4:
-        'Real estate consultancy fees are refunded if you are not satisfied. We are with you whenever you need us at every stage—residence, domicile, purchase, and rental. Our goal is to be an investment partner you can rely on in Istanbul.',
-      imageAlt: 'Modern architecture in Istanbul',
-      cta: 'Discover Our Story',
+        'Real estate consultancy fees are refundable if you are not satisfied. We stand by you at every stage of residence, purchase, rental, and legal processes. Our goal is to be the investment partner you can trust in Istanbul.',
+      imageAlt: 'Residence Istanbul luxury real estate',
+      cta: 'Start Your Investment Journey',
       stats: {
         years: 'Years of Excellence',
         projects: 'Completed Projects',
@@ -186,8 +193,10 @@ export const translations: Record<Language, Translations> = {
       },
     },
     hero: {
-      title: 'Istanbul Living Elevated',
-      subtitle: 'Premium apartments in the heart of Istanbul',
+      title: 'Residence Istanbul',
+      subtitle: 'Istanbul\'s Premier Real Estate Investment & Luxury Property Consultancy',
+      tagline:
+        'Your Trusted Partner for Smart Property Investment, Luxury Living, Turkish Citizenship, and High-Value Real Estate Opportunities in Istanbul',
       cta: 'View Properties',
       secondaryCta: 'Contact Us',
       badge: 'Trusted by 500+ International Investors',
@@ -287,7 +296,7 @@ export const translations: Record<Language, Translations> = {
     },
     footer: {
       rights: '© 2026 Residence Istanbul. All rights reserved.',
-      intro: 'Trusted real estate consultancy for luxury residences and new projects in Istanbul.',
+      intro: 'Premier real estate investment consultancy for luxury living, Turkish citizenship, and high-value opportunities in Istanbul.',
       about: 'About',
       aboutText: 'Residence Istanbul is always with you and will be in solidarity.',
       quickLinks: 'Quick Links',
@@ -314,6 +323,7 @@ export const translations: Record<Language, Translations> = {
       subtitle: 'Explore our stunning properties and developments',
       imageAlt: 'Gallery image',
     },
+    overview: overviewTranslations.en,
   },
   ar: {
     nav: {
@@ -326,15 +336,18 @@ export const translations: Record<Language, Translations> = {
       gallery: 'المعرض',
     },
     about: {
-      badge: 'من نحن',
-      title: 'نصنع العمارة الحديثة في اسطنبول',
-      description1: 'نحن شركة رائدة في مجال تطوير العقارات متخصصة في المشاريع السكنية الحديثة والفاخرة في جميع أنحاء اسطنبول. مع أكثر من 15 عامًا من الخبرة، رسخنا أنفسنا كقادة في الصناعة في إنشاء تحف معمارية تمزج التصميم المعاصر مع التراث التركي.',
-      description2: 'التزامنا بالتميز يدفع كل مشروع نقوم به. من المفهوم إلى الإنجاز، نحافظ على أعلى معايير الجودة، باستخدام أحدث تقنيات البناء والمواد الممتازة. تم تصميم كل مشروع بعناية لتوفير تجربة معيشية لا مثيل لها للسكان في أكثر المواقع المرغوبة في اسطنبول.',
-      description3: 'نفخر بنهجنا الذي يركز على العميل، حيث نوفر الدعم الشامل طوال رحلة الاستثمار. يعمل فريقنا من المهندسين المعماريين والمهندسين وخبراء العقارات معًا لتقديم عقارات لا تلبي المعايير الدولية فحسب، بل تتجاوزها، مما يجعلنا الخيار الموثوق للمستثمرين المميزين في جميع أنحاء العالم.',
+      badge: 'Residence Istanbul',
+      title: 'الشركة الرائدة في الاستثمار العقاري الفاخر في إسطنبول',
+      description1:
+        'Residence Istanbul شركة متخصصة في الاستثمار العقاري في إسطنبول، تركز على المشاريع السكنية العصرية والفاخرة. نسعد بمساعدتكم في إيجاد المنزل أو الشقة أو المبنى الأمثل لكم.',
+      description2:
+        'انطلاقًا من التزامنا بالثقة ورضا العملاء، نربط الباحثين عن سكن بمساكنهم المثالية، موفرين أحدث تقنيات البناء وأرقى الخدمات.',
+      description3:
+        'نرافقكم طوال رحلة استثماركم. نقدم مشاريع جديدة، وشققًا حديثة، ومبانٍ سكنية عصرية. ما عليكم سوى إخبارنا بالمنطقة والحي المفضلين لديكم، ومدى قربها من المطار، والميزات المطلوبة، والنطاق السعري.',
       description4:
-        'تُسترد أتعاب الاستشارات العقارية إذا لم يكن هناك رضا. نكون إلى جانبك عندما تحتاجنا في كل مرحلة—الإقامة والسكن وشراء أو كراء العقار. هدفنا أن نكون شريك استثمار تثق به في إسطنبول.',
-      imageAlt: 'عمارة حديثة في إسطنبول',
-      cta: 'اكتشف قصتنا',
+        'رسوم الاستشارات العقارية قابلة للاسترداد في حال عدم رضاكم. نرافقكم في كل مرحلة من مراحل معاملاتكم—السكن والإقامة والشراء والإيجار. هدفنا أن نكون شريككم الاستثماري الموثوق في إسطنبول.',
+      imageAlt: 'Residence Istanbul عقارات فاخرة',
+      cta: 'ابدأ رحلة استثمارك',
       stats: {
         years: 'سنوات من التميز',
         projects: 'مشروع مكتمل',
@@ -343,8 +356,10 @@ export const translations: Record<Language, Translations> = {
       },
     },
     hero: {
-      title: 'الحياة الراقية في اسطنبول',
-      subtitle: 'شقق فاخرة في قلب اسطنبول',
+      title: 'Residence Istanbul',
+      subtitle: 'الشركة الرائدة في الاستثمار العقاري الفاخر واستشارات العقارات في إسطنبول',
+      tagline:
+        'شريككم الموثوق للاستثمار العقاري الذكي، والحياة الفاخرة، والجنسية التركية، وفرص العقارات عالية القيمة في إسطنبول',
       cta: 'عرض العقارات',
       secondaryCta: 'اتصل بنا',
       badge: 'موثوق من قبل أكثر من 500 مستثمر دولي',
@@ -471,6 +486,7 @@ export const translations: Record<Language, Translations> = {
       subtitle: 'اطلع على صور عقاراتنا ومشاريعنا',
       imageAlt: 'صورة المعرض',
     },
+    overview: overviewTranslations.ar,
   },
   ru: {
     nav: {
@@ -500,8 +516,10 @@ export const translations: Record<Language, Translations> = {
       },
     },
     hero: {
-      title: 'Жизнь в Стамбуле на высшем уровне',
-      subtitle: 'Премиальные квартиры в сердце Стамбула',
+      title: 'Residence Istanbul',
+      subtitle: 'Ведущая компания по инвестициям в элитную недвижимость Стамбула',
+      tagline:
+        'Ваш надежный партнер для умных инвестиций, роскошной жизни, турецкого гражданства и высокодоходной недвижимости в Стамбуле',
       cta: 'Посмотреть недвижимость',
       secondaryCta: 'Связаться с нами',
       badge: 'Нам доверяют более 500 международных инвесторов',
@@ -628,6 +646,7 @@ export const translations: Record<Language, Translations> = {
       subtitle: 'Изучите наши потрясающие объекты и проекты',
       imageAlt: 'Изображение галереи',
     },
+    overview: overviewTranslations.ru,
   },
   fa: {
     nav: {
@@ -640,15 +659,18 @@ export const translations: Record<Language, Translations> = {
       gallery: 'گالری',
     },
     about: {
-      badge: 'ما کی هستیم',
-      title: 'ساخت معماری مدرن در استانبول',
-      description1: 'ما یک شرکت پیشرو در توسعه املاک هستیم که در پروژه‌های مسکونی مدرن و لوکس در سراسر استانبول تخصص داریم. با بیش از 15 سال تجربه، ما خود را به عنوان رهبران صنعت در ایجاد شاهکارهای معماری که طراحی معاصر را با میراث ترکیه ترکیب می‌کنند، معرفی کرده‌ایم.',
-      description2: 'تعهد ما به تعالی هر پروژه‌ای را که انجام می‌دهیم هدایت می‌کند. از مفهوم تا تکمیل، ما بالاترین استانداردهای کیفیت را حفظ می‌کنیم، با استفاده از تکنیک‌های ساخت پیشرفته و مواد ممتاز. هر پروژه با دقت طراحی شده است تا تجربه زندگی بی‌نظیری را برای ساکنان در مطلوب‌ترین مکان‌های استانبول ارائه دهد.',
-      description3: 'ما به رویکرد مشتری‌محور خود افتخار می‌کنیم و در طول سفر سرمایه‌گذاری پشتیبانی جامعی ارائه می‌دهیم. تیم ما از معماران، مهندسان و متخصصان املاک خبره با هم کار می‌کنند تا املاکی را ارائه دهند که نه تنها استانداردهای بین‌المللی را برآورده می‌کنند، بلکه فراتر از آن می‌روند، که ما را به انتخاب مورد اعتماد سرمایه‌گذاران باهوش در سراسر جهان تبدیل می‌کند.',
+      badge: 'Residence Istanbul',
+      title: 'شرکت پیشرو سرمایه‌گذاری املاک لوکس در استانبول',
+      description1:
+        'رزیدنس استانبول شرکتی متخصص در سرمایه‌گذاری املاک و مستغلات در استانبول است که بر پروژه‌های مسکونی مدرن و لوکس تمرکز دارد. ما خوشحالیم که در یافتن خانه، آپارتمان یا ساختمان ایده‌آل به شما کمک کنیم.',
+      description2:
+        'با تعهد به اعتماد و رضایت مشتری، کسانی را که به دنبال مکانی برای زندگی هستند با اقامتگاه‌های ایده‌آلشان مرتبط می‌کنیم و تکنیک‌های ساخت و ساز پیشرفته و امکانات رفاهی درجه یک را ارائه می‌دهیم.',
+      description3:
+        'ما در طول مسیر سرمایه‌گذاری شما در کنار شما هستیم. ما پروژه‌های جدید، آپارتمان‌های نوساز و ساختمان‌های قابل سکونت ارائه می‌دهیم. کافیست منطقه، محله، نزدیکی به فرودگاه، ویژگی‌های مورد نظر و محدوده قیمت خود را به ما اطلاع دهید.',
       description4:
-        'در صورت عدم رضایت، هزینه مشاوره املاک بازگردانده می‌شود. در هر مرحله—اقامت، اقامتگاه، خرید و اجاره—هر وقت نیاز داشته باشید در کنار شما هستیم. هدف ما همراه سرمایه‌گذاری است که بتوانید در استانبول به آن اعتماد کنید.',
-      imageAlt: 'معماری مدرن در استانبول',
-      cta: 'داستان ما را کشف کنید',
+        'در صورت عدم رضایت مشتری، هزینه سرمایه‌گذاری املاک و مستغلات قابل استرداد است. ما در هر مرحله از معاملات شما، از جمله سکونت، خرید و اجاره، در کنار شما هستیم. هدف ما این است که شریک سرمایه‌گذاری مورد اعتماد شما در استانبول باشیم.',
+      imageAlt: 'Residence Istanbul املاک لوکس',
+      cta: 'سفر سرمایه‌گذاری خود را آغاز کنید',
       stats: {
         years: 'سال تعالی',
         projects: 'پروژه تکمیل شده',
@@ -657,8 +679,10 @@ export const translations: Record<Language, Translations> = {
       },
     },
     hero: {
-      title: 'زندگی در سطح بالا در استانبول',
-      subtitle: 'آپارتمان‌های لوکس در قلب استانبول',
+      title: 'Residence Istanbul',
+      subtitle: 'شرکت پیشرو سرمایه‌گذاری املاک لوکس و مشاوره املاک در استانبول',
+      tagline:
+        'شریک مورد اعتماد شما برای سرمایه‌گذاری هوشمند، زندگی لوکس، تابعیت ترکیه و فرصت‌های املاک با ارزش بالا در استانبول',
       cta: 'مشاهده املاک',
       secondaryCta: 'تماس با ما',
       badge: 'مورد اعتماد بیش از 500 سرمایه‌گذار بین‌المللی',
@@ -785,6 +809,7 @@ export const translations: Record<Language, Translations> = {
       subtitle: 'نماهایی از املاک و پروژه‌های ما را ببینید',
       imageAlt: 'تصویر گالری',
     },
+    overview: overviewTranslations.fa,
   },
   tr: {
     nav: {
@@ -797,15 +822,15 @@ export const translations: Record<Language, Translations> = {
       gallery: 'Galeri',
     },
     about: {
-      badge: 'Biz Kimiz',
-      title: 'İstanbul\'da Modern Mimari Üretiyoruz',
+      badge: 'Residence Istanbul',
+      title: 'İstanbul\'da Lüks Gayrimenkul Yatırım Danışmanlığı',
       description1: 'Residence İstanbul, İstanbul\'da gayrimenkul danışmanlığı yapan, modern ve lüks konut projelerinde uzmanlaşmış bir firmadır. Aradığınız residans, daire ve apartman konusunda size yardımcı olmaktan mutluluk duyuyoruz.',
       description2: 'Güvene dayalı ticaret anlayışımız ve müşteri memnuniyetine bağlılığımızla, son teknoloji inşaat teknikleri ve premium olanaklar sunarak güvenle ikamet edeceğiniz konutları sizlerle buluşturuyoruz.',
       description3: 'Yatırım yolculuğunuz boyunca yanınızdayız. Yeni projeler, sıfır daireler ve yaşanabilir apartmanları sizlere sunuyoruz. Beğendiğiniz bölge, semt, havalimanına yakınlık ve istediğiniz özellikler ile fiyat aralığınızı bize bildirmeniz yeterlidir.',
       description4:
         'Gayrimenkul danışmanlığı ücreti, müşteri memnuniyeti olmadığında iade edilir. Oturum, ikametgah, satın alma, kiraya verme gibi işlerinizin her aşamasında istediğinizde yanınızda olacağız. İstanbul’da güveneceğiniz bir yatırım ortağınız olmak hedefimizdir.',
       imageAlt: 'İstanbul’da modern mimari',
-      cta: 'Hikayemizi Keşfedin',
+      cta: 'Yatırım Yolculuğunuza Başlayın',
       stats: {
         years: 'Yıllık Mükemmellik',
         projects: 'Tamamlanmış Proje',
@@ -814,8 +839,10 @@ export const translations: Record<Language, Translations> = {
       },
     },
     hero: {
-      title: 'İstanbul\'da lüks huzurlu güvenli yaşam',
-      subtitle: 'Burada İstanbul\'da aradığınız residence ve sıfır daireler yeni projeler',
+      title: 'Residence Istanbul',
+      subtitle: 'İstanbul\'da Lüks Gayrimenkul Yatırım ve Danışmanlık',
+      tagline:
+        'Akıllı yatırım, lüks yaşam, Türk vatandaşlığı ve yüksek değerli gayrimenkul fırsatları için güvenilir ortağınız',
       cta: 'Projeleri Görüntüle',
       secondaryCta: 'İletişime Geçin',
       badge: '500+ Uluslararası Yatırımcının Güvendiği',
@@ -942,6 +969,7 @@ export const translations: Record<Language, Translations> = {
       subtitle: 'Muhteşem mülklerimizi ve projelerimizi keşfedin',
       imageAlt: 'Galeri görseli',
     },
+    overview: overviewTranslations.tr,
   },
   ur: {
     nav: {
@@ -954,15 +982,18 @@ export const translations: Record<Language, Translations> = {
       gallery: 'گیلری',
     },
     about: {
-      badge: 'ہم کون ہیں',
-      title: 'استنبول میں جدید فن تعمیر تخلیق کرنا',
-      description1: 'ہم ایک معروف رئیل اسٹیٹ ڈویلپمنٹ کمپنی ہیں جو پورے استنبول میں جدید، لگژری رہائشی منصوبوں میں مہارت رکھتی ہے۔ 15 سال سے زیادہ کے تجربے کے ساتھ، ہم نے معاصر ڈیزائن کو ترکی ورثے کے ساتھ ملا کر تعمیراتی شاہکار تخلیق کرنے میں صنعت کے رہنما کے طور پر اپنے آپ کو قائم کیا ہے۔',
-      description2: 'بہترین کے لیے ہماری وابستگی ہر پروجیکٹ کو آگے بڑھاتی ہے جس کا ہم آغاز کرتے ہیں۔ تصور سے تکمیل تک، ہم جدید ترین تعمیراتی تکنیک اور اعلیٰ معیار کے مواد استعمال کرتے ہوئے معیار کے اعلیٰ ترین معیارات کو برقرار رکھتے ہیں۔ ہر ترقیاتی منصوبہ احتیاط سے ڈیزائن کیا گیا ہے تاکہ رہائشیوں کو استنبول کے انتہائی مطلوبہ مقامات پر بے مثال رہائشی تجربہ فراہم کیا جا سکے۔',
-      description3: 'ہمیں اپنے کلائنٹ پر مبنی نقطہ نظر پر فخر ہے، جو سرمایہ کاری کے سفر کے دوران جامع معاونت فراہم کرتا ہے۔ ماہر معماروں، انجینئرز اور رئیل اسٹیٹ پیشہ وروں کی ہماری ٹیم مل کر ایسی جائیدادیں فراہم کرنے کے لیے کام کرتی ہے جو نہ صرف بین الاقوامی معیارات کو پورا کرتی ہیں بلکہ ان سے آگے نکل جاتی ہیں، جو ہمیں دنیا بھر کے باشعور سرمایہ کاروں کے لیے قابل اعتماد انتخاب بناتی ہے۔',
+      badge: 'Residence Istanbul',
+      title: 'استنبول میں لگژری رئیل اسٹیٹ سرمایہ کاری مشاورت',
+      description1:
+        'Residence Istanbul استنبول میں رئیل اسٹیٹ کی سرمایہ کاری میں ماہر رکھنے والی کمپنی ہے، جو جدید اور لگژری رہائشی منصوبوں پر توجہ مرکوز کرتی ہے۔ ہمیں مکمل گھر، اپارٹمنٹ، یا عمارت تلاش کرنے میں آپ کی مدد کرنے پر خوشی ہے۔',
+      description2:
+        'اعتماد اور گاہک کی اطمینان کے عزم کے ساتھ، ہم جدید ترین تعمیراتی تکنیک اور پریمیم سہولیات پیش کرتے ہوئے، رہائش تلاش کرنے والوں کو ان کی مثالی رہائش گاہوں سے جوڑتے ہیں۔',
+      description3:
+        'ہم آپ کے سرمایہ کاری کے سفر کے دوران آپ کے ساتھ ہیں۔ ہم نئے منصوبے، بالکل نئے اپارٹمنٹس، اور رہائش کے قابل عمارتیں پیش کرتے ہیں۔ بس ہمیں اپنا پسندیدہ علاقہ، پڑوس، ہوائی اڈے کی قربت، مطلوبہ خصوصیات اور قیمت کی حد سے آگاہ کریں۔',
       description4:
-        'رئیل اسٹیٹ مشاورت کی فیس واپس کر دی جاتی ہے اگر آپ مطمئن نہیں۔ ہم رہائش، مستقل سکونت، خرید اور کرایے کے ہر مرحلے پر آپ کی ضرورت پر ساتھ ہیں۔ ہمارا مقصد استنبول میں ایسا سرمایہ کاری پارٹنر ہونا جس پر آپ بھروسہ کر سکیں۔',
-      imageAlt: 'استنبول میں جدید فن تعمیر',
-      cta: 'ہماری کہانی دریافت کریں',
+        'رئیل اسٹیٹ کی سرمایہ کاری مشاورت کی فیس اگر آپ مطمئن نہ ہوں تو واپس کی جاتی ہے۔ ہم آپ کے ہر مرحلے میں— سکونت، خرید، اور کرایے میں— ساتھ ہیں۔ ہمارا مقصد استنبول میں آپ کا قابلِ اعتماد سرمایہ کاری پارٹنر بننا ہے۔',
+      imageAlt: 'Residence Istanbul لگژری جائیداد',
+      cta: 'اپنے سرمایہ کاری کے سفر کا آغاز کریں',
       stats: {
         years: 'سال کی بہترین کارکردگی',
         projects: 'مکمل منصوبے',
@@ -971,8 +1002,10 @@ export const translations: Record<Language, Translations> = {
       },
     },
     hero: {
-      title: 'استنبول میں بلند معیار کی زندگی',
-      subtitle: 'استنبول کے دل میں پریمیم اپارٹمنٹس',
+      title: 'Residence Istanbul',
+      subtitle: 'استنبول میں لگژری رئیل اسٹیٹ سرمایہ کاری اور مشاورت',
+      tagline:
+        'سمارٹ سرمایہ کاری، لگژری زندگی، ترک شہریت اور اعلیٰ قدر کی جائیداد کے مواقع کے لیے آپ کا قابلِ اعتماد پارٹنر',
       cta: 'جائیدادیں دیکھیں',
       secondaryCta: 'رابطہ کریں',
       badge: '500+ بین الاقوامی سرمایہ کاروں کا اعتماد',
@@ -1099,6 +1132,7 @@ export const translations: Record<Language, Translations> = {
       subtitle: 'ہماری شاندار جائیدادیں اور ترقیات دریافت کریں',
       imageAlt: 'گیلری تصویر',
     },
+    overview: overviewTranslations.ur,
   },
 };
 
